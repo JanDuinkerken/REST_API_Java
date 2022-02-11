@@ -1,0 +1,27 @@
+
+Clases de implementación de los DAOs:
+	@jesus.costoya: AbstractSqlRegisterDao, Jdbc3CcSqlRegisterDao
+	@jan.duinkerken: AbstractSqlTripDao, Jdbc3CcSqlTripDao
+
+Clase de implementación del servicio (o servicios) de la capa modelo:
+	@jesus.costoya: [FUNC-3,4] Buscar excursión/es, añadir reserva y ambas funciones de borrado.
+	@jan.duinkerken: [FUNC-1,2] Añadir y actualizar excursión.
+	@miguel.sanchez.perez: [FUNC-5,6] Cancelar y buscar reserva.
+
+Clase que contiene los tests de integración de la capa modelo:
+	Cada uno realizó los tests de las funcionalidades correspondientes.
+
+Métodos de los Servlets que constituyen la capa Servicios REST:
+	@jan.duinkerken: [FUNC-1,2] TripServlet.ProcessPost y TripServlet.ProcessPut
+    @jesus.costoya: [FUNC-3,4] TripServlet.ProcessGet y RegisterServlet.ProcessPost
+	@miguel.sanchez.perez: [FUNC-5,6] RegisterServlet.ProcessPut y RegisterServlet.ProcessGet
+
+Métodos públicos de la clase de implementación de la capa de Acceso al Servicio REST:
+    @jan.duinkerken: [FUNC-1,2] Añadir y actualizar excursión.
+    @jesus.costoya: [FUNC-3,4] Buscar excursiones y añadir reserva.
+    @miguel.sanchez.perez: [FUNC-5,6] Cancelar y buscar reserva.
+
+TT-1(FUNC-1 y FUNC-2): @jan.duinkerken (Los commits estan taggeados como FUNC-1 y FUNC-2 por error)
+TT-2(FUNC-3 y FUNC-4): @jesus.costoya (El commit de la función buscarExcursión y addRegister se llaman FUNC-3 y TT-4 en
+lugar de TT-2 por error)
+TT-3(FUNC-5 y FUNC-6): @miguel.sanchez.perez (Los commits estan taggeados como TT-5 y TT-6 en lugar de TT-3 por error)
